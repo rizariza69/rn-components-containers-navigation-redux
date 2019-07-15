@@ -13,7 +13,7 @@ class SignupScreen extends Component {
     return (
       <ScrollView style={styles.container}>
         <KeyboardAvoidingView behavior="position">
-          <Signup />
+          <Signup move={() => this.props.navigation.navigate("LoginScreen")} />
         </KeyboardAvoidingView>
       </ScrollView>
     );

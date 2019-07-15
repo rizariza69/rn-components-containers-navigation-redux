@@ -2,6 +2,9 @@ import { createStackNavigator, createAppContainer } from "react-navigation";
 import LoginScreen from "../Containers/LoginScreen";
 import LaunchScreen from "../Containers/LaunchScreen";
 import SignupScreen from "../Containers/SignupScreen";
+import HomeScreen from "../Containers/HomeScreen";
+import Page2Screen from "../Containers/Page2Screen";
+import FooterScreen from "../Containers/FooterScreen";
 
 import styles from "./Styles/NavigationStyles";
 
@@ -10,7 +13,9 @@ const PrimaryNav = createStackNavigator(
   {
     LoginScreen: { screen: LoginScreen },
     LaunchScreen: { screen: LaunchScreen },
-    SignupScreen: { screen: SignupScreen }
+    SignupScreen: { screen: SignupScreen },
+    HomeScreen: { screen: HomeScreen },
+    Page2Screen: { screen: Page2Screen }
   },
   {
     // Default config for all screens
@@ -19,6 +24,12 @@ const PrimaryNav = createStackNavigator(
     initialRouteName: "LoginScreen",
     navigationOptions: {
       headerStyle: styles.header
+    },
+    tabBarPosition: "bottom",
+    animationEnabled: true,
+    swipeEnabled: false,
+    tabBarComponent: props => {
+      return <FooterScreen navigation={props.navigation} />;
     }
   }
 );

@@ -1,23 +1,18 @@
 import React, { Component } from "react";
 import { ScrollView, Text, KeyboardAvoidingView } from "react-native";
 import { connect } from "react-redux";
-import Login from "../Components/Login";
 // Add Actions - replace 'Your' with whatever your reducer is called :)
 // import YourActions from '../Redux/YourRedux'
 
 // Styles
-import styles from "./Styles/LoginScreenStyle";
+import styles from "./Styles/HomeScreenStyle";
 
-class LoginScreen extends Component {
-  componentDidMount() {}
+class HomeScreen extends Component {
   render() {
     return (
       <ScrollView style={styles.container}>
         <KeyboardAvoidingView behavior="position">
-          <Login
-            pindah={() => this.props.navigation.navigate("SignupScreen")}
-            moveHomeScreen={() => this.props.navigation.navigate("HomeScreen")}
-          />
+          <Text>HomeScreen</Text>
         </KeyboardAvoidingView>
       </ScrollView>
     );
@@ -35,4 +30,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(LoginScreen);
+)(HomeScreen);

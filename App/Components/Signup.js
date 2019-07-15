@@ -86,6 +86,7 @@ export default class Signup extends Component {
         <TouchableHighlight
           style={[styles.buttonContainer, styles.loginButton]}
           // onPress={() => this.onClickListener("login")}
+          onPress={this.props.move}
         >
           <Text style={styles.loginText}>Signup</Text>
         </TouchableHighlight>
