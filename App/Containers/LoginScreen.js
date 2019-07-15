@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { ScrollView, Text, KeyboardAvoidingView } from "react-native";
+import { View, ScrollView, Text, KeyboardAvoidingView } from "react-native";
 import { connect } from "react-redux";
 import Login from "../Components/Login";
 // Add Actions - replace 'Your' with whatever your reducer is called :)
