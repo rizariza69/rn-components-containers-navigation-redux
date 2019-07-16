@@ -10,6 +10,7 @@ import {
   Image,
   Alert
 } from "react-native";
+import { Icon } from "native-base";
 import styles from "./Styles/SignupStyle";
 
 export default class Signup extends Component {
