@@ -16,8 +16,9 @@ import {
 import { connect } from "react-redux";
 // import FullButton from "../Components/FullButton";
 import ButtonRounded from "../Components/ButtonRounded";
-import RoundedButton from "../Components/RoundedButton";
+import ButtonTesting from "../Components/ButtonTesting";
 import BodyHome from "../Components/BodyHome";
+
 // Add Actions - replace 'Your' with whatever your reducer is called :)
 // import YourActions from '../Redux/YourRedux'
 
@@ -43,6 +44,12 @@ class HomeScreen extends Component {
           <BodyHome />
           <ButtonRounded
             moveToPage2={() => this.props.navigation.navigate("Page2Screen")}
+          />
+
+          <ButtonTesting
+            moveToTesting={() =>
+              this.props.navigation.navigate("TestingScreen")
+            }
           />
         </Content>
         <Footer>

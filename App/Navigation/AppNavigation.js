@@ -5,6 +5,7 @@ import SignupScreen from "../Containers/SignupScreen";
 import HomeScreen from "../Containers/HomeScreen";
 import Page2Screen from "../Containers/Page2Screen";
 import FooterScreen from "../Containers/FooterScreen";
+import TestingScreen from "../Containers/TestingScreen";
 
 import styles from "./Styles/NavigationStyles";
 
@@ -16,6 +17,7 @@ const PrimaryNav = createStackNavigator(
     SignupScreen: { screen: SignupScreen },
     HomeScreen: { screen: HomeScreen },
     Page2Screen: { screen: Page2Screen }
+    // TestingScreen: { screen: TestingScreen }
   },
   {
     // Default config for all screens
